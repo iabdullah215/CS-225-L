@@ -66,9 +66,9 @@ Average Turnaround Time: ((8 + 12.6 + 8)) / 3 ≈ 9.53
 
 ### Advantages:
 
-- **Balance between short and long jobs:** Employing smaller time quanta in higher-priority levels ensures swift response times for critical processes while allocating larger time quanta in lower-priority levels facilitates the efficient execution of longer jobs without excessive context switching.
-- **Improved system utilization:** By dedicating more time to long-running jobs in lower levels with larger quanta, CPU idle time is minimized, leading to enhanced resource utilization and overall system efficiency.
-- **Flexibility for diverse processes:** Offering different time quanta accommodates processes with varying execution requirements, allowing the system to adapt dynamically to the needs of different workloads and optimize performance accordingly. This flexibility ensures that both short-term interactive tasks and long-term CPU-bound computations are handled effectively, promoting a balanced and responsive computing environment.
+- _**Balance between short and long jobs:**_ Employing smaller time quanta in higher-priority levels ensures swift response times for critical processes while allocating larger time quanta in lower-priority levels facilitates the efficient execution of longer jobs without excessive context switching.
+- _**Improved system utilization:**_ By dedicating more time to long-running jobs in lower levels with larger quanta, CPU idle time is minimized, leading to enhanced resource utilization and overall system efficiency.
+- _**Flexibility for diverse processes:**_ Offering different time quanta accommodates processes with varying execution requirements, allowing the system to adapt dynamically to the needs of different workloads and optimize performance accordingly. This flexibility ensures that both short-term interactive tasks and long-term CPU-bound computations are handled effectively, promoting a balanced and responsive computing environment.
 
 ## Question 03
 
