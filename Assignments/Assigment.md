@@ -34,10 +34,14 @@ FCFS (First-Come, First-Served) scheduling executes processes in the order they 
 | Process | Arrival Time | Burst Time | Completion | Turnaround |
 | ------- | ------------ | ---------- | ---------- | ---------- |
 | P1      | 0.0          | 8          | 8          | 8          |
-| P3      | 0.1          | 1          | 9          | 8          |
-| P2      | 0.4          | 4          | 13         | 12.6       |
+| P3      | 0.4          | 4          | 12         | 11.6       |
+| P2      | 1            | 1          | 13         | 12         |
 
-Average Turnaround Time: ((8 + 12.6 + 8)) / 3 ≈ 9.53
+Average Turnaround Time: ((8 + 11.6 + 12)) / 3 ≈ 10.53
+
+**Gantt Chart**
+
+| P1 | P2 | P3 |
 
 ### Average Turnaround Time According to the SJF:
 
@@ -45,11 +49,15 @@ SJF (Shortest Job First) scheduling executes the shortest job first. For non-pre
 
 | Process | Arrival Time | Burst Time | Completion | Turnaround |
 | ------- | ------------ | ---------- | ---------- | ---------- |
-| P3      | 0.0          | 8          | 2          | 1          |
-| P2      | 0.4          | 4          | 6.4        | 6          |
-| P1      | 0.0          | 8          | 14.4       | 14.4       |
+| P1      | 0.0          | 8          | 8          | 1          |
+| P3      | 0.4          | 1          | 9          | 6          |
+| P2      | 0.1          | 4          | 13         | 12.6       |
 
-Average Turnaround Time: ((1 + 6 + 14.4)) / 3 ≈ 7.13
+Average Turnaround Time: ((8 + 12.6 + 8)) / 3 ≈ 9.53
+
+**Gantt Chart**
+
+| P1 | P3 | P2 |
 
 ## Question 02
 
