@@ -42,6 +42,8 @@ Average Turnaround Time: ((8 + 11.6 + 12)) / 3 ≈ 10.53
 **Gantt Chart**
 
 | P1 | P2 | P3 |
+| -- | -- | -- |
+
 
 ### Average Turnaround Time According to the SJF:
 
