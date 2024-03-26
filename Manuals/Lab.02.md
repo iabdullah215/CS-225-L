@@ -98,3 +98,39 @@ Hello World
 Abdullah
 hello.sh is running
 ```
+
+## Task 04:
+
+Use array in your code.
+
+```bash
+#!/bin/bash
+
+echo "Hello World"
+name="Abdullah"
+echo $name
+
+my_array=("apple" "banana")
+
+echo "Elements of the array:"
+echo "${my_array[0]}" 
+echo "${my_array[1]}" 
+echo "Script name: $0"
+echo "First argument: $1"
+echo "Second argument: $2"
+```
+
+Now, let's execute the file
+
+```bash
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./hello.sh happy hacking
+Hello World
+Abdullah
+Elements of the array:
+apple
+banana
+Script name: ./script.sh
+First argument: happy
+Second argument: hacking
+```
