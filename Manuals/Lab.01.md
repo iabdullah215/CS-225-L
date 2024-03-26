@@ -2,6 +2,7 @@
 Course: CS-225-L - Operating System Lab
 Name : Muhammad Abdullah
 Reg. ID: BS-CYS-F22-221546
+Lab Number: 01
 ```
 
 # Basic Linux Commands
