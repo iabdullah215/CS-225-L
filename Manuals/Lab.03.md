@@ -7,7 +7,7 @@ Lab Number: 03
 
 # Bash Scripting
 
-This lab contains basic bash scripting codes.
+This lab contains basic bash scrips.
 
 ## File Creation:
 > First, create an empty file by name `hello.sh`
