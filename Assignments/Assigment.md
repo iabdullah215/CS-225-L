@@ -10,6 +10,7 @@ Suppose that the following processes arrive for execution at the times indicated
 | P3      | 1.0          | 1          |
 
 `a.` What is the average turnaround time for these processes with the FCFS scheduling algorithm?
+
 `b.` What is the average turnaround time for these processes with the SJF scheduling algorithm?
 
 ## Question 02
