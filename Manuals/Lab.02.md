@@ -103,6 +103,8 @@ hello.sh is running
 
 Use an array in your code.
 
+> `my_array=($@)` would essentially create an array called `my_array` containing all the **positional parameters** passed to the **script** or **function**.
+
 ```bash
 #!/bin/bash
 
