@@ -20,3 +20,66 @@ A CPU scheduling algorithm determines an order for the execution of its schedule
 
 ## Question 04
 Explain the difference between preemptive and non-preemptive scheduling.
+
+# Solutions
+
+# Operating System Scheduling Solutions
+
+## Question 01
+
+### Average Turnaround Time According to the FCFS:
+
+FCFS (First-Come, First-Served) scheduling executes processes in the order they arrive. Therefore, we will calculate the turnaround time for each process and then find the average.
+
+| Process | Arrival Time | Burst Time | Completion | Turnaround |
+| ------- | ------------ | ---------- | ---------- | ---------- |
+| P1      | 0.0          | 8          | 8          | 8          |
+| P3      | 0.1          | 1          | 9          | 8          |
+| P2      | 0.4          | 4          | 13         | 12.6       |
+
+Average Turnaround Time: ((8 + 12.6 + 8)) / 3 ≈ 9.53
+
+### Average Turnaround Time According to the SJF:
+
+SJF (Shortest Job First) scheduling executes the shortest job first. For non-preemptive SJF, we need to know the burst times of all processes before starting.
+
+| Process | Arrival Time | Burst Time | Completion | Turnaround |
+| ------- | ------------ | ---------- | ---------- | ---------- |
+| P3      | 0.0          | 8          | 2          | 1          |
+| P2      | 0.4          | 4          | 6.4        | 6          |
+| P1      | 0.0          | 8          | 14.4       | 14.4       |
+
+Average Turnaround Time: ((1 + 6 + 14.4)) / 3 ≈ 7.13
+
+## Question 02
+
+### Advantages:
+
+- **Balance between short and long jobs:** Employing smaller time quanta in higher-priority levels ensures swift response times for critical processes while allocating larger time quanta in lower-priority levels facilitates the efficient execution of longer jobs without excessive context switching.
+- **Improved system utilization:** By dedicating more time to long-running jobs in lower levels with larger quanta, CPU idle time is minimized, leading to enhanced resource utilization and overall system efficiency.
+- **Flexibility for diverse processes:** Offering different time quanta accommodates processes with varying execution requirements, allowing the system to adapt dynamically to the needs of different workloads and optimize performance accordingly. This flexibility ensures that both short-term interactive tasks and long-term CPU-bound computations are handled effectively, promoting a balanced and responsive computing environment.
+
+## Question 03
+
+### Solution:
+
+When scheduling `n` Processes on a single processor, the order of execution can be considered as a permutation of the processes. In permutations, the order matters. For `n` Processes, the number of possible permutations is given by the factorial of `n` denoted as `n!`. Therefore, the formula to calculate the number of different schedules in terms of `n` is:
+
+Number of different schedules = n!
+
+- If `n` = `3`, then the number of different schedules is `3!` = `3` x `2` x `1` = `6`.
+- If `n`= `5`, then the number of different schedules is `5!` = `5` x `4` x `3` x `2` x `1` = `120`.
+
+Therefore, the formula for the number of different schedules in terms of n is n!
+
+## Question 04
+
+### Preemptive vs. Non-Preemptive Scheduling
+
+| Aspect                      | Preemptive Scheduling                                                                                                       | Non-Preemptive Scheduling                                                                                                       |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Interruption of Processes  | The operating system can interrupt a currently executing process to start or resume another process.                      | Once a process starts execution, it continues until it terminates or voluntarily relinquishes the CPU.                            |
+| Basis for Process Switching | Switching can be triggered by time slice expiration, higher priority process arrival, or completion of I/O operations.      | Process switches occur only upon completion or when the running process voluntarily yields control (e.g., waiting for I/O).       |
+| Responsiveness             | Offers better responsiveness and fairness in multitasking environments.                                                    | May lead to poor responsiveness, especially if a long-running process monopolizes the CPU.                                         |
+| Overhead                   | May incur more overhead due to frequent context switches.                                                                   | Usually involves less overhead compared to preemptive scheduling.                                                                |
+| Implementation Complexity  | Generally more complex to implement.                                                                                      | Simpler to implement.                                                                                                            |
