@@ -101,7 +101,7 @@ hello.sh is running
 
 ## Task 04:
 
-Use array in your code.
+Use an array in your code.
 
 ```bash
 #!/bin/bash
