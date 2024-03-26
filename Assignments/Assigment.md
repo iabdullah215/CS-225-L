@@ -9,8 +9,8 @@ Suppose that the following processes arrive for execution at the times indicated
 | P2      | 0.4          | 4          |
 | P3      | 1.0          | 1          |
 
-a. What is the average turnaround time for these processes with the FCFS scheduling algorithm?
-b. What is the average turnaround time for these processes with the SJF scheduling algorithm?
+`a.` What is the average turnaround time for these processes with the FCFS scheduling algorithm?
+`b.` What is the average turnaround time for these processes with the SJF scheduling algorithm?
 
 ## Question 02
 What advantage is there in having different time-quantum sizes at different levels of a multilevel queueing system?
@@ -27,6 +27,7 @@ Explain the difference between preemptive and non-preemptive scheduling.
 
 ## Question 01
 
+## `a.`
 ### Average Turnaround Time According to the FCFS:
 
 FCFS (First-Come, First-Served) scheduling executes processes in the order they arrive. Therefore, we will calculate the turnaround time for each process and then find the average.
@@ -45,6 +46,7 @@ Average Turnaround Time: ((8 + 11.6 + 12)) / 3 ≈ 10.53
 | -- | -- | -- |
 
 
+## `b.`
 ### Average Turnaround Time According to the SJF:
 
 SJF (Shortest Job First) scheduling executes the shortest job first. For non-preemptive SJF, we need to know the burst times of all processes before starting.
