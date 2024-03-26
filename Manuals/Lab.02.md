@@ -137,7 +137,7 @@ First argument: happy
 Second argument: hacking
 ```
 
-## Task 04:
+## Task 05:
 
 Write a code that asks for an `integer` value from the user and then checks whether it is equal to 100 or not. (Use If Else statments)
 
@@ -170,7 +170,48 @@ Please enter an integer value:
 The entered integer is equal to 100.
 ```
 
-## Task 04:
+## Task 06:
+
+Write a code that asks for an `integer` value from the user and then checks whether it is greater than or less than 100. (Use If Else and Else If statments)
+
+```bash
+#!/bin/bash
+
+echo "Please enter an integer value:"
+read integer
+
+    if [ "$integer" -eq 100 ]; then
+        echo "The entered integer is equal to 100."
+    elif [ "$integer" -gt 100 ]; then
+        echo "The entered integer is greater than 100."
+    else
+        echo "The entered integer is less than 100."
+    fi
+```
+
+Now, let's execute the file
+
+```bash
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./hello.sh 
+Please enter an integer value:
+12
+The entered integer is less than 100.
+
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./hello.sh 
+Please enter an integer value:
+100
+The entered integer is equal to 100.
+
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./hello.sh 
+Please enter an integer value:
+200
+The entered integer is greater than 100.
+```
+
+## Task 07:
 
 Write a bash script that asks the user to enter a file name and then checks whether that file is present in the current directory or not.
 
