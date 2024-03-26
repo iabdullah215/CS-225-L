@@ -1,8 +1,8 @@
-    ```markdown
-    Name: Muhammad Abdullah
-    RollNumber: BS-CYS-F22-221546
-    Course: Operating System Lab
-    ---
+```jsx
+Course: CS-225-L - Operating System Lab
+Name : Muhammad Abdullah
+Reg. ID: BS-CYS-F22-221546
+```
 
 # Basic Linux Commands
 
