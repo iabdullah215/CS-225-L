@@ -60,6 +60,7 @@ Average Turnaround Time: ((8 + 12.6 + 8)) / 3 ≈ 9.53
 **Gantt Chart**
 
 | P1 | P3 | P2 |
+| -- | -- | -- |
 
 ## Question 02
 
