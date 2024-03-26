@@ -52,3 +52,23 @@ Hello World
 └─$ bash hello.sh
 Hello World
 ```
+
+## Task 02:
+
+Write a code with a variable `name` having your name assigned to it. It should display you name on the terminal upon execution of the code.
+```bash
+#!/bin/bash
+
+echo "Hello World"
+name = "Abdullah"
+echo $name
+```
+
+Now, we can execute the file
+
+```bash
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./hello.sh
+Hello World
+Abdullah
+```
