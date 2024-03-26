@@ -136,3 +136,68 @@ Script name: ./script.sh
 First argument: happy
 Second argument: hacking
 ```
+
+## Task 04:
+
+Write a code that asks for an `integer` value from the user and then checks whether it is equal to 100 or not. (Use If Else statments)
+
+```bash
+#!/bin/bash
+
+echo "Please enter an integer value:"
+read integer
+
+  if [ "$integer" -eq 100 ]; then
+    echo "The entered integer is equal to 100."
+  else
+    echo "The entered integer is not equal to 100."
+  fi
+```
+
+Now, let's execute the file
+
+```bash
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./hello.sh 
+Please enter an integer value:
+12
+The entered integer is not equal to 100.
+
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./hello.sh 
+Please enter an integer value:
+100
+The entered integer is equal to 100.
+```
+
+## Task 04:
+
+Write a bash script that asks the user to enter a file name and then checks whether that file is present in the current directory or not.
+
+```bash
+#!/bin/bash
+
+read -p "Please enter an integer value: " file
+
+  if [ -e "$file" ]; then
+    echo "File Found!"
+  else
+    echo "Error"
+  fi
+```
+
+> `-p` flag is used with the read command to display a prompt message to the user. In this script, it prompts the user to enter an integer value. `-e` flag is used with the `[` command (equivalent to the `test` command) to check if a file exists. If the file exists, the expression evaluates to `true`; otherwise, it evaluates to `false`. In this script, it checks if the file exists in the current directory.
+
+Now, let's execute the file
+
+```bash
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./hello.sh 
+Please enter an integer value: hello.sh
+File Found!
+
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./hello.sh 
+Please enter an integer value: hello.txt
+Error
+```
