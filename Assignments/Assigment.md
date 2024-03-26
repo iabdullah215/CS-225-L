@@ -79,7 +79,7 @@ Average Turnaround Time: ((8 + 12.6 + 8)) / 3 ≈ 9.53
 
 When scheduling `n` Processes on a single processor, the order of execution can be considered as a permutation of the processes. In permutations, the order matters. For `n` Processes, the number of possible permutations is given by the factorial of `n` denoted as `n!`. Therefore, the formula to calculate the number of different schedules in terms of `n` is:
 
-Number of different schedules = n!
+Number of different schedules = `n!`
 
 - If `n` = `3`, then the number of different schedules is `3!` = `3` x `2` x `1` = `6`.
 - If `n`= `5`, then the number of different schedules is `5!` = `5` x `4` x `3` x `2` x `1` = `120`.
