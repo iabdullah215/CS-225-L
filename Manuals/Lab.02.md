@@ -72,3 +72,29 @@ Now, we can execute the file
 Hello World
 Abdullah
 ```
+
+## Task 03:
+
+Use the command `echo $0 $1 $2` in your code.
+- `$0`: This represents the name of the script or shell itself.
+- `$1`: This represents the first command-line argument passed to the script or function.
+- `$2`: Similarly, this represents the second command-line argument.
+
+```bash
+#!/bin/bash
+
+echo "Hello World"
+name = "Abdullah"
+echo $name
+echo $0 $1 $2
+```
+
+Now, let's execute the file
+
+```bash
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./hello.sh is running
+Hello World
+Abdullah
+hello.sh is running
+```
