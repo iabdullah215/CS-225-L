@@ -80,7 +80,7 @@ echo "Number of files in the current directory: $file_count"
 **Code Explaination:**
 
 - `ls -1` lists the files in the current directory, one per line.
-- This output is piped (`|`) to wc `-l`, which counts the number of files in the output.
+- This output is piped (`|`) to `wc -l`, which counts the number of files in the output.
 - The final count is stored in the variable named `file_count`
 
 **Output:**
