@@ -1,3 +1,17 @@
+```jsx
+
+ /$$$$$$$   /$$$$$$   /$$$$$$  /$$   /$$       /$$   /$$  /$$$$$$  /$$$$$$$$ /$$$$$$$$  /$$$$$$ 
+| $$__  $$ /$$__  $$ /$$__  $$| $$  | $$      | $$$ | $$ /$$__  $$|__  $$__/| $$_____/ /$$__  $$
+| $$  \ $$| $$  \ $$| $$  \__/| $$  | $$      | $$$$| $$| $$  \ $$   | $$   | $$      | $$  \__/
+| $$$$$$$ | $$$$$$$$|  $$$$$$ | $$$$$$$$      | $$ $$ $$| $$  | $$   | $$   | $$$$$   |  $$$$$$ 
+| $$__  $$| $$__  $$ \____  $$| $$__  $$      | $$  $$$$| $$  | $$   | $$   | $$__/    \____  $$
+| $$  \ $$| $$  | $$ /$$  \ $$| $$  | $$      | $$\  $$$| $$  | $$   | $$   | $$       /$$  \ $$
+| $$$$$$$/| $$  | $$|  $$$$$$/| $$  | $$      | $$ \  $$|  $$$$$$/   | $$   | $$$$$$$$|  $$$$$$/
+|_______/ |__/  |__/ \______/ |__/  |__/      |__/  \__/ \______/    |__/   |________/ \______/
+
+BY ABDULLAH
+
+```
 # Introduction to Bash Scripting
 
 [Source: Codecademy](https://www.codecademy.com/courses/learn-the-command-line)
@@ -577,6 +591,3 @@ buzz.css  foo1.html     foo3.html
 - Zip the resulting **build** directory.
 - Give the script more character with emojis.
 - If you are familiar with `git`, commit the changes in the build directory.
-
-
-Credits goes to [Pushkar100](https://github.com/pushkar100) for these amazing notes...
