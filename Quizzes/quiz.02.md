@@ -131,6 +131,6 @@ AVERAGE WAITING TIME: 6.6
 | P4 | P2 | P1 | P5 | P3 |
 | -- | -- | -- | -- | -- |
 
-> What is a `Gantt Chart`?
+> What is a _**Gantt Chart**_?
 
 A Gantt chart is a type of bar chart that illustrates a project schedule. It provides a graphical representation of the start and finish dates/times of the various elements of a project. The horizontal axis of the chart represents the timeline, typically broken down into increments such as `seconds`, `days`, `weeks`, or `months`, while the vertical axis lists the `tasks` or `activities` involved in the project.
