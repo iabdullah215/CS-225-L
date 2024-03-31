@@ -88,7 +88,6 @@ int main() {
     closedir(dir);
     return 0;
 }
-
 ```
 
 **Code Explaination:**
@@ -105,7 +104,6 @@ Enter directory name: ~/Desktop/OS-L
 Assignment
 Quizzes
 Notes.txt
-
 ```
 
 ## Question Number 02:
@@ -142,12 +140,11 @@ int main() {
     fclose(file);
     return 0;
 }
-
 ```
 
 **Code Explaination:**
-This `C` script takes a filename and a word as input from the user, opens the file in read mode, reads each line of the file using `fgets()`, and checks if the user-input word is present in each line using `strstr()`. If found, it prints the line. Finally, it closes the file.
 
+This `C` script takes a filename and a word as input from the user, opens the file in read mode, reads each line of the file using `fgets()`, and checks if the user-input word is present in each line using `strstr()`. If found, it prints the line. Finally, it closes the file.
 
 **Output:**
 
@@ -158,7 +155,6 @@ Enter file name: test.txt
 Enter word to search: Abdullah
 Hi there I am Abdullah.
 Abdullah is writting code in C lang.
-
 ```
 
 ## Question Number 03:
@@ -180,12 +176,10 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 **Code Explaination:**
 This C script uses `fork()` to create a child process. The child process prints its own process `ID` using `getpid()`, while the parent process prints its own process `ID`. If `fork()` fails, it prints an error message.
-
 
 **Output:**
 
@@ -194,7 +188,6 @@ This C script uses `fork()` to create a child process. The child process prints 
 └─$ ./q3
 The parent process ID is 1612
 The child process ID is 1613
-
 ```
 
 ## Question Number 04:
@@ -225,12 +218,11 @@ int main(int argc, char *argv[]) {
     fclose(file);
     return 0;
 }
-
 ```
 
 **Code Explaination:**
-This `C` script replicates the `cat` command in Linux. It takes a `filename` as a `command-line argument`, opens the file in read mode, reads each character using `fgetc()`, and prints it to the standard output. Finally, it closes the file.
 
+This `C` script replicates the `cat` command in Linux. It takes a `filename` as a `command-line argument`, opens the file in read mode, reads each character using `fgetc()`, and prints it to the standard output. Finally, it closes the file.
 
 **Output:**
 
@@ -240,7 +232,6 @@ This `C` script replicates the `cat` command in Linux. It takes a `filename` as 
 This is a test text file. 
 Hi there I am Abdullah.
 Abdullah is writting code in C lang.
-
 ```
 
 ## Question Number 05:
@@ -267,12 +258,11 @@ int main() {
     printf("File closed successfully\n");
     return 0;
 }
-
 ```
 
 **Code Explaination:**
-This `C` script opens a file by the name `test.txt` for reading using the `open()` system call with the `O_RDONLY` flag. It checks if the file was opened successfully, prints a message if successful, closes the file using the `close()` system call, and `returns 0` to indicate successful execution.
 
+This `C` script opens a file by the name `test.txt` for reading using the `open()` system call with the `O_RDONLY` flag. It checks if the file was opened successfully, prints a message if successful, closes the file using the `close()` system call, and `returns 0` to indicate successful execution.
 
 **Output:**
 
@@ -281,5 +271,4 @@ This `C` script opens a file by the name `test.txt` for reading using the `open(
 └─$ ./q5
 File opened successfully
 File closed successfully
-
 ```
