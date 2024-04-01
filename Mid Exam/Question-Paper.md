@@ -29,14 +29,14 @@ Duration : 3 Hours (8:00 - 11:00)
 
 ## Question Number 02
 
-Consider a scenario where a computer system needs to schedule processes using the Round Robin CPU scheduling algorithm. You are tasked with implementing this algorithm in a programming language of your choice.
-Below are the details of the processes and their burst times:
+> Consider a scenario where a computer system needs to schedule processes using the Round Robin CPU scheduling algorithm. You are tasked with implementing this algorithm in a programming language of your choice.
+> Below are the details of the processes and their burst times:
 - `Process 1:` Burst Time = 6 units
 - `Process 2:` Burst Time = 4 units
 - `Process 3:` Burst Time = 8 units
 - `Process 4:` Burst Time = 5 units
-The time quantum for the Round Robin algorithm is `3` units. Write a program to simulate the Round Robin CPU scheduling algorithm for the given processes. Your program should calculate and display the turnaround time and waiting time for each process.
-Your program should adhere to the following guidelines:
+> The time quantum for the Round Robin algorithm is `3` units. Write a program to simulate the Round Robin CPU scheduling algorithm for the given processes. Your program should calculate and display the turnaround time and waiting time for each process.
+> Your program should adhere to the following guidelines:
 - Implement the Round Robin algorithm to schedule processes.
 - Accept input for the number of processes, burst time of each process, and the time quantum.
 - Calculate and display the turnaround time and waiting time for each process.
