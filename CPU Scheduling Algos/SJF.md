@@ -15,7 +15,7 @@
 
 Shortest Job First (SJF) is a preemptive or non-preemptive scheduling algorithm used in operating systems and task management systems.
 
-##Principle:
+## Principle:
 
 SJF schedules tasks based on their expected execution time, also known as burst time.
 
