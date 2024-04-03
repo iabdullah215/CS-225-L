@@ -8,7 +8,7 @@
                   $$ |            \$$$$$$  |      $$ |            \$$$$$$  |
                   \__|             \______/       \__|             \______/
 
-                  FIRST COME FIRST SERVE SHEDULING
+                  FIRST             COME          FIRST              SERVE 
 ```
 
 ## Definition
