@@ -13,7 +13,7 @@
 
 ## Definition
 
-FCFS is a non-preemptive scheduling algorithm used in operating systems and task management systems.
+First come First serve (FCFS) is a non-preemptive scheduling algorithm used in operating systems and task management systems.
 
 ## Principle:
 
