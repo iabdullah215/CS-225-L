@@ -128,4 +128,4 @@ Average turn around time = 16
 
 > The output or the code may have some errors.
 
-**For more help feel freeto visit this [website](https://www.geeksforgeeks.org/program-for-fcfs-cpu-scheduling-set-1/)**
+**For more help feel free to visit this [website](https://www.geeksforgeeks.org/program-for-fcfs-cpu-scheduling-set-1/)**
