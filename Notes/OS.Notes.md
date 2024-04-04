@@ -62,9 +62,11 @@
 - Multi-threaded process has one program counter per thread.
 
 
-## MIGRATION OF INTEGER A FROM DISK TO REGISTER
+**MIGRATION OF INTEGER `A` FROM DISK TO REGISTER** 
 
-**Magnetic Disk --> Main Memory --> Cache --> Hardware Register**
+```jsx
+Magnetic Disk --> Main Memory --> Cache --> Hardware Register
+```
 
 
 - **Protection** – Any mechanism for controlling access of processes or users to resources defined by the OS.
