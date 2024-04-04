@@ -11,6 +11,8 @@
                           NOTES THAT I MADE FOR BY MIDS PREP                 
 ```
 
+# Operating System
+
 - A program that acts as an intermediary between a user of a computer and the computer hardware. 
 
 - Computer System can be divided into four components. 
@@ -59,11 +61,11 @@
 
 - Multi-threaded process has one program counter per thread.
 
----
-#### MIGRATION OF INTEGER A FROM DISK TO REGISTER
+
+## MIGRATION OF INTEGER A FROM DISK TO REGISTER
 
 **Magnetic Disk --> Main Memory --> Cache --> Hardware Register**
----
+
 
 - **Protection** – Any mechanism for controlling access of processes or users to resources defined by the OS.
 
