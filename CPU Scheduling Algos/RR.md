@@ -166,7 +166,87 @@ Average turn around time = 20
 > With priority
 
 ```C++
+#include<iostream>
+#include<algorithm>
+using namespace std;
 
+void findWaitingTime(int processes[], int n, int bt[], int wt[], int quantum, int priority[]) {
+    int rem_bt[n];
+    for (int i = 0; i < n; i++)
+        rem_bt[i] = bt[i];
+
+    int t = 0;
+
+    while (1) {
+        bool done = true;
+
+        for (int i = 0; i < n; i++) {
+            if (rem_bt[i] > 0) {
+                done = false;
+
+                if (priority[i] > priority[0]) {
+                    for (int j = 0; j < n; j++) {
+                        if (priority[j] < priority[i] && rem_bt[j] > 0) {
+                            swap(priority[j], priority[i]);
+                            swap(rem_bt[j], rem_bt[i]);
+                            swap(processes[j], processes[i]);
+                            swap(bt[j], bt[i]);
+                            swap(wt[j], wt[i]);
+                        }
+                    }
+                }
+
+                if (rem_bt[i] > quantum) {
+                    t += quantum;
+                    rem_bt[i] -= quantum;
+                }
+                else {
+                    t = t + rem_bt[i];
+                    wt[i] = t - bt[i];
+                    rem_bt[i] = 0;
+                }
+            }
+        }
+
+        if (done == true)
+            break;
+    }
+}
+
+void findTurnAroundTime(int processes[], int n, int bt[], int wt[], int tat[]) {
+    for (int i = 0; i < n; i++)
+        tat[i] = bt[i] + wt[i];
+}
+
+void findavgTime(int processes[], int n, int bt[], int quantum, int priority[]) {
+    int wt[n], tat[n], total_wt = 0, total_tat = 0;
+
+    findWaitingTime(processes, n, bt, wt, quantum, priority);
+    findTurnAroundTime(processes, n, bt, wt, tat);
+
+    cout << "PN\t " << " \tBT " << "  WT " << " \tTAT" << " \tPriority\n";
+
+    for (int i = 0; i < n; i++) {
+        total_wt += wt[i];
+        total_tat += tat[i];
+        cout << " " << processes[i] << "\t\t" << bt[i] << "\t "
+            << wt[i] << "\t\t " << tat[i] << "\t\t " << priority[i] << endl;
+    }
+
+    cout << "Average waiting time = " << (float)total_wt / (float)n;
+    cout << "\nAverage turn around time = " << (float)total_tat / (float)n;
+}
+
+int main() {
+    int processes[] = { 1, 2, 3 };
+    int n = sizeof processes / sizeof processes[0];
+    int burst_time[] = { 10, 5, 8 };
+    int quantum = 2;
+    int priority[] = { 3, 1, 2 };
+
+    findavgTime(processes, n, burst_time, quantum, priority);
+    return 0;
+}
 ```
 
 > Output
@@ -175,9 +255,9 @@ Average turn around time = 20
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./RR
 PN	     BT    WT      TAT   Priority
- 1		   10	    7		    17		  3
- 3		   8	    2		    10		  2
- 2		   5	    0		    5		    1
+ 1		10	   7		 17		 3
+ 3		8	   2		 10		 2
+ 2		5	   0		 5		 1
 Average waiting time = 3
 Average turn around time = 10.6667
 ```
