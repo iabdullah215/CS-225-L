@@ -135,5 +135,19 @@ int main()
 ## Output
 
 ```linux
+┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
+└─$ ./Priority
+Order in which processes gets executed 
+1 3 2 
+Processes  Burst time  Waiting time  Turn around time
+ 1        10     0         10
+ 3        8     10         18
+ 2        5     18         23
 
+Average waiting time = 9.33333
+Average turn around time = 17
 ```
+
+> The code or the output may have errors in it
+
+**Visit the [website](https://www.geeksforgeeks.org/program-for-priority-cpu-scheduling-set-1/) for more**
