@@ -257,7 +257,7 @@ int main() {
 PN	         BT       WT      TAT       Priority
  1		       10	      7		    17		       3
  3		       8	      2		    10		       2
- 2		       5	      0		     5  		     1
+ 2		       5	      0		    5  		       1
 Average waiting time = 3
 Average turn around time = 10.6667
 ```
