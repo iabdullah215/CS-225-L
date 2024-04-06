@@ -124,7 +124,25 @@ int main()
 ```bash
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./SJF
-
+ENTER NUMBER OF PROCESSES: 5
+-----------------------------------
+ENTER BURST TIME:
+P1: 5
+P2: 3
+P3: 8
+P4: 2
+P5: 6
+-----------------------------------
+P     BT     WT
+-----------------------------------
+P4     2     0
+P2     3     2
+P1     5     5
+P5     6     10
+P3     8     16
+-----------------------------------
+AVERAGE WAITING TIME: 6.6
+-----------------------------------
 ```
 
 > **Shortest Remaining Time First**
