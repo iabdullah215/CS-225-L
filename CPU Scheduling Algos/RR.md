@@ -254,7 +254,7 @@ int main() {
 ```bash
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./RR
-PN	         BT       WT      TAT       Priority
+PN	              BT       WT      TAT       Priority
  1		       10	      7		    17		       3
  3		       8	      2		    10		       2
  2		       5	      0		    5  		       1
