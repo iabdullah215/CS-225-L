@@ -236,7 +236,7 @@ int main() {
 
 ```linux
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
-└─$ ./priority
+└─$ ./Priority
 Process Priority Burst Time  Waiting Time  Turnaround Time
 2       1        5            0             5
 4       2        12           5             17
@@ -249,3 +249,5 @@ Average Waiting Time: 16.60
 Total Turnaround Time: 120
 Average Turnaround Time: 24.00
 ```
+
+---
