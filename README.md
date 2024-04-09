@@ -1,4 +1,4 @@
-# CS-225-L
+# CS225-L
 
 This is all the learning material that I made or collected including lab manuals, quizzes, assignments, and notes from the course CS-225-L (Operating System Lab)
 
