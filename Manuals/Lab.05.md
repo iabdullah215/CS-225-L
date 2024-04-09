@@ -157,11 +157,95 @@ F S    UID     PID    PPID  C  PRI  NI  ADDR SZ   WCHAN  TTY            TIME  CM
 > Write a code to demonstrate priority scheduling.
 
 ```C
+#include <stdio.h>
 
+#define MAX_PROCESSES 5
+
+typedef struct {
+    int process_id;
+    int priority;
+    int burst_time;
+    int waiting_time;
+    int turnaround_time;
+} Process;
+
+void swap(Process *a, Process *b) {
+    Process temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void sort_by_priority(Process processes[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (processes[j].priority > processes[j + 1].priority) {
+                swap(&processes[j], &processes[j + 1]);
+            }
+        }
+    }
+}
+
+void priority_scheduling(Process processes[], int n) {
+    sort_by_priority(processes, n);
+
+    int total_waiting_time = 0;
+    int total_turnaround_time = 0;
+
+    printf("Process\tPriority\tBurst Time\tWaiting Time\tTurnaround Time\n");
+    for (int i = 0; i < n; i++) {
+        if (i == 0) {
+            processes[i].waiting_time = 0;
+        } else {
+            processes[i].waiting_time = processes[i - 1].waiting_time + processes[i - 1].burst_time;
+        }
+        processes[i].turnaround_time = processes[i].waiting_time + processes[i].burst_time;
+        
+        total_waiting_time += processes[i].waiting_time;
+        total_turnaround_time += processes[i].turnaround_time;
+
+        printf("%d\t%d\t\t%d\t\t%d\t\t%d\n", processes[i].process_id, processes[i].priority, 
+               processes[i].burst_time, processes[i].waiting_time, processes[i].turnaround_time);
+    }
+
+    double avg_waiting_time = (double)total_waiting_time / n;
+    double avg_turnaround_time = (double)total_turnaround_time / n;
+
+    printf("\nTotal Waiting Time: %d\n", total_waiting_time);
+    printf("Average Waiting Time: %.2lf\n", avg_waiting_time);
+    printf("Total Turnaround Time: %d\n", total_turnaround_time);
+    printf("Average Turnaround Time: %.2lf\n", avg_turnaround_time);
+}
+
+int main() {
+    Process processes[MAX_PROCESSES] = {
+        {1, 3, 10, 0, 0},
+        {2, 1, 5, 0, 0},
+        {3, 4, 7, 0, 0},
+        {4, 2, 12, 0, 0},
+        {5, 5, 3, 0, 0}
+    };
+
+    printf("Before scheduling:\n");
+    priority_scheduling(processes, MAX_PROCESSES);
+
+    return 0;
+}
 ```
 
 **Output**
 
 ```linux
+┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
+└─$ ./priority
+Process Priority Burst Time  Waiting Time  Turnaround Time
+2       1        5            0             5
+4       2        12           5             17
+1       3        10           17            27
+3       4        7            27            34
+5       5        3            34            37
 
+Total Waiting Time: 83
+Average Waiting Time: 16.60
+Total Turnaround Time: 120
+Average Turnaround Time: 24.00
 ```
