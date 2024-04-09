@@ -151,3 +151,17 @@ F S    UID     PID    PPID  C  PRI  NI  ADDR SZ   WCHAN  TTY            TIME  CM
 - The parent process then sleeps for ***10 seconds*** using the `sleep()` function, allowing the child process to persist as a **zombie** during this period.
 - After the sleep duration, the parent process exits, leaving the child process in a zombie state as the parent did not wait for the child's termination using functions like `wait()`.
 - When running the program in the background and checking the process status using `ps - l`, the child process with a state of `Z` (zombie) should be visible, confirming its existence in the system
+
+**Task Number: 03**
+
+> Write a code to demonstrate priority scheduling.
+
+```C
+
+```
+
+**Output**
+
+```linux
+
+```
