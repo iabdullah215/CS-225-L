@@ -1,6 +1,6 @@
 # CS-225-L
 
-This is all the learning material and lab manuals from the course CS-225-L (Operating System)
+This is all the learning material that I made or collected including lab manuals, quizzes, assignments, and notes from the course CS-225-L (Operating System Lab)
 
 ## Some basics before you start.
 
