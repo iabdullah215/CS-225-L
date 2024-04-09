@@ -93,3 +93,61 @@ This `C` program uses the `fork()` system call to create a child process. In the
 
 **Code:**
 
+```C
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+
+int main() {
+    pid_t child_pid;
+
+    child_pid = fork();
+
+    if (child_pid == -1) {
+        perror("fork");
+        exit(EXIT_FAILURE);
+    } else if (child_pid == 0) {
+        printf("Child process created. PID: %d\n", getpid());
+        exit(EXIT_SUCCESS);
+    } else {
+        printf("Parent process. PID: %d, Child PID: %d\n", getpid(), child_pid);
+        sleep(10);
+        exit(EXIT_SUCCESS);
+    }
+
+    return 0;
+}
+```
+
+**Output:**
+
+```linux
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ./output &
+[1] 22718
+
+Parent process. PID: 22718, Child PID: 22720
+Child process created. PID: 22720
+```
+
+> When you append an ampersand `&` at the end of a command in the shell, it runs the command in the background
+
+```linux
+┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
+└─$ ps -l
+F S    UID     PID    PPID  C  PRI  NI  ADDR SZ   WCHAN  TTY            TIME  CMD
+0 S   1000   22718    1792  0   85   5 -     616 hrtime  pts/0      00:00:00  output
+0 Z   1000   22720   22718  0   85   5 -     0   -       pts/0      00:00:00  output
+```
+
+> Now when we use the command `ps -l` it will enlist all the current running processes and we will check our respective `process ID` from the list as shown and highlighted below.
+
+**Explanation:**
+
+- The `C` program initiates a child process using the `fork()` system call, creating a new process in which the child immediately `exits`, becoming a zombie.
+- The parent process, upon successfully creating the child, prints information about both the parent and child processes, including their respective process IDs `PIDs`.
+- The parent process then sleeps for ***10 seconds*** using the `sleep()` function, allowing the child process to persist as a **zombie** during this period.
+- After the sleep duration, the parent process exits, leaving the child process in a zombie state as the parent did not wait for the child's termination using functions like `wait()`.
+- When running the program in the background and checking the process status using `ps - l`, the child process with a state of `Z` (zombie) should be visible, confirming its existence in the system
