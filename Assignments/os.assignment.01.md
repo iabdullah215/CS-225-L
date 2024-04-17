@@ -44,7 +44,7 @@ This script takes a year as input from the user and checks whether it's a leap y
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Assignment]
 └─$ ./task1
 Enter a year: 
