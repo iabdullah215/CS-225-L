@@ -77,7 +77,7 @@ This script calculates the factorial of a given number provided by the user. It 
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Assignment]
 └─$ ./task2
 Enter a number: 
@@ -112,7 +112,7 @@ This script swaps the values of two numbers provided by the user. It stores the 
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Assignment]
 └─$ ./task3
 Enter first number: 
