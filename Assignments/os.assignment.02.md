@@ -226,7 +226,7 @@ This `C` script replicates the `cat` command in Linux. It takes a `filename` as 
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Assignment]
 └─$ ./q4 test.txt
 This is a test text file. 
