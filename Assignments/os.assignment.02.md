@@ -266,7 +266,7 @@ This `C` script opens a file by the name `test.txt` for reading using the `open(
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Assignment]
 └─$ ./q5
 File opened successfully
