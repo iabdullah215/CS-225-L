@@ -19,7 +19,7 @@ Assignment Number: 02
 
 > Write a `C` script forms two processes a `parent` and a `child` process using the `fork()` function and then friends an output as shown.
 
-```C
+```console
 The parent process ID is <any-ID>
 The child process ID is <any-ID>
 ```
