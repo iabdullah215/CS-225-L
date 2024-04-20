@@ -97,7 +97,7 @@ This  `C` script takes a directory name as input from the user, opens the direct
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Assignment]
 └─$ ./q2
 Enter directory name: ~/Desktop/OS-L
