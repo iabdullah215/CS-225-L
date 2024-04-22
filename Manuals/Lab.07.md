@@ -17,13 +17,13 @@ Air University Islamabad
 
 ## Solution:
 
-First, create a file with the extension `**.c**`
+First, create a file with the extension **`.c`**
 
-`**touch <file-name>.c**`
+**`touch <file-name>.c`**
 
 Now open the file in a code editor.
 
-`**sudo nano <file-name>.c**`
+**`sudo nano <file-name>.c`**
 
 To create a `**C**` program that uses threads to print the information stored in a structure, you'll need to use the **`POSIX`** Threads library **`pthreads`**. This example demonstrates how to define a structure to hold the specified information, create a thread, and pass this structure to the new thread. The thread will then print the information.
 
