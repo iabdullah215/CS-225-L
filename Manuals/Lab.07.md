@@ -120,9 +120,9 @@ Write a C program that prints the following series using threads.
 
 ## Solution:
 
-First, create a file with the extension `**.c**`
+First, create a file with the extension **`.c`**
 
-`**touch <file-name>.c**`
+**`touch <file-name>.c`**
 
 Now open the file in a code editor.
 
