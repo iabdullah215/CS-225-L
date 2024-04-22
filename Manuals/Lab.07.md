@@ -232,5 +232,119 @@ Pattern 1:
 1 2 3 4 
 -----------
 ```
+---
+
+## Task Number: 03
+
+Write a code for multithreading in which you should take number of threads to be created as input from user. Each created thread should display: • Thread id • Exit status • And message which should have been taken from user to be printed
+
+## Solution:
+
+First, create a file with the extension `**.c**`
+
+`**touch <file-name>.c**`
+
+Now open the file in a code editor.
+
+`**sudo nano <file-name>.c**`
+
+To write a C program that creates a specified number of threads and displays thread-specific information, you can use the POSIX Threads library (**`pthread.h`**). Here's a sample program that prompts the user for the number of threads to create, and for a custom message to display. Each thread displays its ID, exit status, and the message provided by the user:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <unistd.h>
+
+typedef struct {
+    int threadIndex;
+    char* message;
+} ThreadData;
+
+void* printThreadInfo(void* arg) {
+    ThreadData* data = (ThreadData*)arg;
+
+    // Get the current thread ID
+    pthread_t threadId = pthread_self();
+
+printf("Thread %d (ID: %lu) - Message: %s\\n", data->threadIndex, threadId, data->message);
+
+    int* exitStatus = malloc(sizeof(int));
+    *exitStatus = 0; 
+    pthread_exit((void*)exitStatus);
+}
+
+int main() {
+    int numThreads;
+    char message[100];
+
+    printf("Enter the number of threads to create: ");
+    scanf("%d", &numThreads);
+
+    printf("Enter a message to print in each thread: ");
+    scanf("%s", message);
+
+    pthread_t* threads = (pthread_t*)malloc(numThreads * sizeof(pthread_t));
+    ThreadData* threadData = (ThreadData*)malloc(numThreads * sizeof(ThreadData));
+
+    for (int i = 0; i < numThreads; i++) {
+        threadData[i].threadIndex = i + 1;
+        threadData[i].message = message;
+
+      if (pthread_create(&threads[i], NULL, printThreadInfo, (void*)&threadData[i]) != 0)
+        {
+            perror("Failed to create thread");
+            free(threads);
+            free(threadData);
+            return 1;
+        }
+    }
+
+    for (int i = 0; i < numThreads; i++) {
+        void* status;
+        if (pthread_join(threads[i], &status) != 0) {
+            perror("Failed to join thread");
+        } else {
+            int exitStatus = *(int*)status;
+            printf("Thread %d exited with status %d\\n", i + 1, exitStatus);
+            free(status);
+        }
+    }
+
+    free(threads);
+    free(threadData);
+    return 0;
+}
+
+```
+
+This program does the following:
+
+- Takes the number of threads and a custom message as input from the user.
+- Creates a specified number of threads, each of which displays its ID, the given message, and its index.
+- Joins all threads and retrieves their exit status, displaying it after each thread finishes.
+
+## Code Compilation:
+
+Now first create the executable of the code file using the following command.
+
+**`gcc <file-name>.c -o <output-file-name>`**
+
+To run the executable use the succeeding command.
+
+**`./<output-file-name>`**
+
+## Output:
+
+```console
+┌──(MnM㉿kali)-[~/Desktop/Os-L/Lab-Tasks]
+└─$ ./output
+Enter the number of threads to create: 2
+Enter a message to print in each thread: H_A_C_K_E_D
+Thread 1 (ID: 139683137586880) - Message: H_A_C_K_E_D
+Thread 2 (ID: 139683129194176) - Message: H_A_C_K_E_D
+Thread 1 exited with status 0
+Thread 2 exited with status 0
+```
 
 ---
