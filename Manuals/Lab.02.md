@@ -231,7 +231,7 @@ read -p "Please enter an integer value: " file
 
 Now, let's execute the file
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./hello.sh 
 Please enter an integer value: hello.sh
