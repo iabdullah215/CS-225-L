@@ -152,7 +152,7 @@ int main()
 
 > Output
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./RR
 PN	     BT    WT      TAT
@@ -251,7 +251,7 @@ int main() {
 
 > Output
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./RR
 PN    BT    WT    TAT    Priority
