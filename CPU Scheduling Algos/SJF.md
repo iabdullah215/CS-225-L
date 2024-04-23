@@ -121,7 +121,7 @@ int main()
 
 > **Output**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./SJF
 ENTER NUMBER OF PROCESSES: 5
@@ -230,7 +230,7 @@ int main() {
 
 > **Output**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./SRTF
 Enter the number of processes: 4
