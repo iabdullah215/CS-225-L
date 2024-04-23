@@ -115,7 +115,7 @@ int main()
 
 ## Output:
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./FCFS
 Processes  Burst time  Waiting time  Turn around time
