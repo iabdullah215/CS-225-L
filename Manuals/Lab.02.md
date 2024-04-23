@@ -91,7 +91,7 @@ echo $0 $1 $2
 
 Now, let's execute the file
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./hello.sh is running
 Hello World
@@ -124,7 +124,7 @@ echo "Second argument: $2"
 
 Now, let's execute the file
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./hello.sh happy hacking
 Hello World
@@ -156,7 +156,7 @@ read integer
 
 Now, let's execute the file
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./hello.sh 
 Please enter an integer value:
@@ -191,7 +191,7 @@ read integer
 
 Now, let's execute the file
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./hello.sh 
 Please enter an integer value:
