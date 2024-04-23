@@ -134,7 +134,7 @@ int main()
 
 ## Output
 
-```linux
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./Priority
 Order in which processes gets executed 
