@@ -43,7 +43,7 @@ chmod +x <file-name>
 
 Now, we can execute the file by using the following command:
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./hello.sh
 Hello World
