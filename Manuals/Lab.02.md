@@ -66,7 +66,7 @@ echo $name
 
 Now, we can execute the file
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./hello.sh
 Hello World
