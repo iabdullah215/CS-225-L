@@ -65,7 +65,7 @@ read -p "Number 2:" num2
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./lab02.sh
 Hello There!
