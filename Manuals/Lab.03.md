@@ -12,7 +12,7 @@ This lab contains basic bash scrips.
 ## File Creation:
 > First, create an empty file by name `hello.sh`
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ touch lab02.sh
 
