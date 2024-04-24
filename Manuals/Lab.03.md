@@ -36,7 +36,7 @@ echo "$sum"
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./lab02.sh 1 2
 Hello There!
