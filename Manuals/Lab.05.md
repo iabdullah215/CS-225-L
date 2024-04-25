@@ -134,7 +134,7 @@ Child process created. PID: 22720
 
 > When you append an ampersand `&` at the end of a command in the shell, it runs the command in the background
 
-```linux
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ps -l
 F S    UID     PID    PPID  C  PRI  NI  ADDR SZ   WCHAN  TTY            TIME  CMD
