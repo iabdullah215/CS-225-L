@@ -123,7 +123,7 @@ int main() {
 
 **Output:**
 
-```linux
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./output &
 [1] 22718
