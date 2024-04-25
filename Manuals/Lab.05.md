@@ -12,7 +12,7 @@ This lab contains basic scripts to demonstrate the usage of System Calls.
 ## File Creation:
 > First, create an empty file by name `system_calls.c`
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ touch system_calls.c
 
