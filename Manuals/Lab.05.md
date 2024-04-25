@@ -234,7 +234,7 @@ int main() {
 
 **Output**
 
-```linux
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./Priority
 Process Priority Burst Time  Waiting Time  Turnaround Time
