@@ -76,7 +76,7 @@ int main()
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./output
 Parent pid = 8890
