@@ -202,7 +202,7 @@ int main() {
 
 **Output**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Mid-Exam]
 └─$ ./q2
 enter no of processes:4
