@@ -45,7 +45,7 @@ bubble_sort "${array[@]}"
 
 **Output**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Mid-Exam]
 └─$ ./q1(A)
 Original array: 1 5 12 2 7
