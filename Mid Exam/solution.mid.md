@@ -121,7 +121,7 @@ echo "Result: $result"
 
 **Output**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Mid-Exam]
 └─$ ./q1(C)
 Enter first number:
