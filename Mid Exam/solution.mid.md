@@ -81,7 +81,7 @@ check "$filename"
 
 **Output**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Mid-Exam]
 └─$ ./q1(B)
 Enter File name: happy
