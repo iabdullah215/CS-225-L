@@ -53,7 +53,7 @@ The shell script checks whether a user-entered number is prime or not. It begins
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Quiz]
 └─$ ./task1
 Enter a number:
