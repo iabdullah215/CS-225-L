@@ -44,7 +44,7 @@ gcc script.c -o output
 
 **Output:**
 
-```Linux
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Tasks]
 └─$ ./output
 ------------------------------------------------
@@ -79,7 +79,7 @@ print("Os Lab is Fun")
 
 **Output:**
 
-```Linux
+```console
 ┌──(MnM@kali)-[~/Desktop/Randum/Python]
 └─$ python3 basic.py
 Os Lab is Fun
