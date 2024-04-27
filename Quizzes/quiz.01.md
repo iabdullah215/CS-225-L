@@ -117,7 +117,7 @@ number is becomes equal to zero it breaks the loop and prints `fsociety : )` in 
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Quiz]
 └─$ ./task3
 Enter a number:
