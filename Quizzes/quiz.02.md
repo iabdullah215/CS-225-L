@@ -102,7 +102,7 @@ g++ -o <output-file-name> <source-file>.cpp
 
 > Output after compilation
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Quiz]
 └─$ ./output
 ENTER NUMBER OF PROCESSES: 5
