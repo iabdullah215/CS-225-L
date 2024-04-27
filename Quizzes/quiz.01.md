@@ -85,7 +85,7 @@ echo "Number of files in the current directory: $file_count"
 
 **Output:**
 
-```bash
+```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/Quiz]
 └─$ ./task2
 Number of files in the current directory: 3
