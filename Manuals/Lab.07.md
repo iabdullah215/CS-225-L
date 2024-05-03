@@ -126,7 +126,7 @@ First, create a file with the extension **`.c`**
 
 Now open the file in a code editor.
 
-`**sudo nano <file-name>.c**`
+**`sudo nano <file-name>.c`**
 
 To create a C program that prints the given series using threads, you'll need to define the desired output and structure the thread functions accordingly. The two specified patterns are:
 
@@ -240,13 +240,13 @@ Write a code for multithreading in which you should take number of threads to be
 
 ## Solution:
 
-First, create a file with the extension `**.c**`
+First, create a file with the extension **`.c`**
 
-`**touch <file-name>.c**`
+**`touch <file-name>.c`**
 
 Now open the file in a code editor.
 
-`**sudo nano <file-name>.c**`
+**`sudo nano <file-name>.c`**
 
 To write a C program that creates a specified number of threads and displays thread-specific information, you can use the POSIX Threads library (**`pthread.h`**). Here's a sample program that prompts the user for the number of threads to create, and for a custom message to display. Each thread displays its ID, exit status, and the message provided by the user:
 
