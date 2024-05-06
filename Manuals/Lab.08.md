@@ -1,8 +1,8 @@
-
-```bash
-Name: Muhammad Abdullah
-Reg ID: F22-A-221546
-Lab Task: 08
+```jsx
+Course: CS-225-L - Operating System Lab
+Name : Muhammad Abdullah
+Reg. ID: BS-CYS-F22-221546
+Lab Number: 01
 ```
 
 ## Lab Description:
@@ -11,7 +11,7 @@ This lab demonstrates the use of Semaphore, Types of Semaphore, Semaphore System
 
 ## Task 2:
 
-Write a program that creates a certain number of seller threads that attempt to sell all the available tickets. There is a global variable `**num_Tickets**` which tracks the number of tickets remaining to sell. We will create many threads that will attempt to sell tickets until they are all gone. Each thread will exit after all the tickets have been sold. E.g. if we have `**4**` tickets and `**2**` seller threads then the output should be like:
+Write a program that creates a certain number of seller threads that attempt to sell all the available tickets. There is a global variable **`num_Tickets`** which tracks the number of tickets remaining to sell. We will create many threads that will attempt to sell tickets until they are all gone. Each thread will exit after all the tickets have been sold. E.g. if we have **`4`** tickets and **`2`** seller threads then the output should be like:
 
 ```nasm
 Seller #1 sold one (3 left)
@@ -85,7 +85,7 @@ int main() {
 
 ## Code Compilation:
 
-- First, create a file with a `**.c`** extension.
+- First, create a file with a **`.c`** extension.
 
 ```bash
 touch <file-name>.c
