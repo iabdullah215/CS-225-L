@@ -1,8 +1,9 @@
 
-```bash
-Name: Muhammad Abdullah
-Reg ID: F22-A-221546
-Lab Task: 
+```jsx
+Course: CS-225-L - Operating System Lab
+Name : Muhammad Abdullah
+Reg. ID: BS-CYS-F22-221546
+Lab Number: 09
 ```
 
 ## Lab Description:
