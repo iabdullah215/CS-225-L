@@ -68,6 +68,6 @@ The implementation of the Bash Chat Application involves several key components:
 
 3. **Graphical Interface:** Developing a simple graphical interface using tools like dialog or Zenity for improved usability.
 
-**Conclusion:**
+## Conclusion:
 
 The Bash Chat Application provides a basic yet functional platform for local network communication using the simplicity of Bash scripting and the networking capabilities of Netcat. While it currently offers essential features, there is ample opportunity for further development and enhancement to meet the evolving needs of users.
