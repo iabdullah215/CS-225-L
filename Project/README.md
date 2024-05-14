@@ -53,6 +53,10 @@ sudo nano server.sh
 ```
 
 ```console
+chmod +x server.sh
+```
+
+```console
 ./server.sh
 ```
 
