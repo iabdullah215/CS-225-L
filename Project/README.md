@@ -63,6 +63,10 @@ chmod +x server.sh
 2. **Client Connection:** Users can connect to the server by running the client script and specifying the server's IP address and port number.
 
 ```console
+sudo nano client.sh
+```
+
+```console
 chmod +x client.sh
 ```
 
