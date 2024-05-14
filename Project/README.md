@@ -49,6 +49,10 @@ The implementation of the Bash Chat Application involves several key components:
 1. **Server Setup:** Run the server script on a designated host within the local network.
 
 ```console
+sudo nano server.sh
+```
+
+```console
 ./server.sh
 ```
 
