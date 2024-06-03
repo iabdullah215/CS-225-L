@@ -8,7 +8,7 @@
                           |  $$$$$$/      |  $$$$$$/      | $$ \  $$|  $$$$$$/   | $$   | $$$$$$$$|  $$$$$$/
                            \______/        \______/       |__/  \__/ \______/    |__/   |________/ \______/
 
-                          NOTES THAT I MADE FOR MY MIDS PREP                 
+                          NOTES THAT I MADE FOR MY EXAM PREPS                 
 ```
 
 # Operating System
