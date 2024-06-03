@@ -84,14 +84,24 @@ int main() {
 **Output:**
 
 ```console
-
+┌──(MnM@kali)-[~/Desktop/OS-L/Finals]
+└─$ ./question1.c
+Seller #0 sold one (4 left)
+Seller #2 sold one (3 left)
+Seller #1 sold one (2 left)
+Seller #0 sold one (1 left)
+Seller #2 sold one (0 left)
+Seller #1 noticed all tickets sold! (I sold 2)
+Seller #2 noticed all tickets sold! (I sold 1)
+Seller #0 noticed all tickets sold! (I sold 2)
+Done
 ```
 
 ---
 
 ## Question Number: 02
 
-```code
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -141,7 +151,13 @@ int main() {
 **Output:**
 
 ```console
-
+┌──(MnM@kali)-[~/Desktop/OS-L/Finals]
+└─$ ./question2.c
+Enter number of threads: 03
+Enter the message to print: OSINT-KING
+Thread 0: OSINT-KING
+Thread 1: OSINT-KING
+Thread 2: OSINT-KING
 ```
 
 ---
