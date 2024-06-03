@@ -13,9 +13,9 @@ Obtained Marks: 25
 # Lab Exam Mid Term Operating System
 ---
 
-# Question Number: 01
+## Question Number: 01
 
-## Part A
+### Part A
 
 **Code**
 
@@ -55,9 +55,9 @@ Sorted array: 1 2 5 7 12
 
 ---
 
-# Question Number: 01
+## Question Number: 01
 
-## Part B
+### Part B
 
 **Code**
 
@@ -96,9 +96,9 @@ Entered File is a simple file
 
 ---
 
-# Question Number: 01
+## Question Number: 01
 
-## Part C
+### Part C
 
 **Code**
 
@@ -136,7 +136,7 @@ Result: 3
 
 ---
 
-# Question Number: 02
+## Question Number: 02
 
 **Code**
 
