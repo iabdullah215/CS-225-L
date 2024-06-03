@@ -3,8 +3,8 @@
 
 
 ```jsx
-Name: Muhammad Abdullah
-Reg. ID: BsCys-F22-221546
+Name: Any Name
+Reg. ID: BsYYY-F00-000000
 Lab/Quiz/Assigment Number: 00
 Course: CS-225-L
 ```
