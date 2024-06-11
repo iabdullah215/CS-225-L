@@ -163,7 +163,14 @@ int main()
 **Output:**
 
 ```console
-
+┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
+└─$ ./FCFS
+Processes  Burst time  Waiting time  Turn around time
+ 1           10            0              10
+ 2           5            10              15
+ 3           8            15              23
+Average waiting time = 8.33333
+Average turn around time = 16
 ```
 
 ## Task Number: 03
