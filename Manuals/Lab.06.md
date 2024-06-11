@@ -275,10 +275,10 @@ int main()
 ```console
 ┌──(MnM@kali)-[~/Desktop/OS-L/CPU]
 └─$ ./RR
-PN	     BT    WT      TAT
-1		 10	   13		23
-2		 5	   10		15
-3		 8	   14		22
+PN	      BT       WT       TAT
+1         10	   13		23
+2          5	   10		15
+3          8	   14		22
 Average waiting time = 12.3333
 Average turn around time = 20
 ```
